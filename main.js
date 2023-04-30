@@ -13,7 +13,7 @@ async function getData() {
         const title = post.title
         const body = post.body
         
-        const res = await fetch("http://img.sm64.us/300/200")
+        const res = await fetch("https://img.sm64.us/300/200")
         const blob = await res.blob()
 
         const newPost = document.importNode(postTemplate.content, true)
